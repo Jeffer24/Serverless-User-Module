@@ -7,9 +7,9 @@ const findUsuarios = async () => {
 };
 
 const findOneUsuario = async (id) => {
-  const perf = await usuarioQuery.findOneUsuario(id);
-  if (!perf) return null;
-  return usuarioDto.getUsuarioFromDBDto(perf);
+  const user = await usuarioQuery.findOneUsuario(id);
+  if (!user) return null;
+  return usuarioDto.getUsuarioFromDBDto(user);
 };
 
 const createUsuario = async ({

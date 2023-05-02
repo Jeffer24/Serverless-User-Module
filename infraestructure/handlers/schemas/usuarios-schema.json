@@ -19,7 +19,7 @@
       "idPerfiles": {
         "description": "Id del perfil del usuario",
         "type": "integer",
-        "maximum": 100,
+        "maximum": 1000,
         "minimum":1
       },
         "estado": {
